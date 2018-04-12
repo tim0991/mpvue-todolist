@@ -93,10 +93,10 @@ export default {
 
         removeTodo(item) {
             this.todos.splice(this.todos.indexOf(item), 1);
-            this.todos = _.clone(this.todos);
+            // this.todos = _.clone(this.todos);
         },
         completeTodo(item) {
-            // item.completed = !item.completed;
+            item.completed = !item.completed;
             // this.todos = _.clone(this.todos);
         },
         clearAll() {
